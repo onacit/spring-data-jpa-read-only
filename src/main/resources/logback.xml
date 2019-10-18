@@ -1,0 +1,19 @@
+<configuration>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="console"/>
+    </root>
+    <logger name="com.github.onacit" level="debug"/>
+    <logger name="org.springframework" level="info"/>
+    <logger name="io.netty" level="info"/>
+    <logger name="org.hibernate" level="info"/>
+    <logger name="com.zaxxer" level="info"/>
+    <logger name="org.synchronoss" level="info"/>
+    <logger name="reactor" level="info"/>
+</configuration>
